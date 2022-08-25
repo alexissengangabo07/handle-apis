@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -33,23 +34,23 @@ const Navbar = () => {
                         </svg>
                     </button>
                     <div class="collapse navbar-collapse flex flex-grow items-center" id="navbarSupportedContent1">
-                        <a class="text-xl text-white pr-2 font-semibold" href="#">Api Center</a>
+                        <NavLink class="text-xl text-white pr-2 font-semibold" to='meteo'>Api Center</NavLink>
                         
                         <ul class="navbar-nav flex flex-row pl-0 list-style-none mr-auto">
                             <li class="nav-item p-2">
-                                <a class="nav-link text-white" href="#">Api Meteo</a>
+                                <NavLink class="nav-link text-white" to='meteo'>Api Meteo</NavLink>
                             </li>
                             <li class="nav-item p-2">
-                                <a
+                                <NavLink
                                     class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
-                                    href="#"
-                                >Api Aviation</a>
+                                    to='films'
+                                >Api Films</NavLink>
                             </li>
                             <li class="nav-item p-2">
-                                <a
+                                <NavLink
                                     class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
-                                    href="#"
-                                >Api Films</a>
+                                    to='avions'
+                                >Api Aviation</NavLink>
                             </li>
                         </ul>
 
