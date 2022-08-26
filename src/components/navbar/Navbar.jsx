@@ -37,16 +37,16 @@ const Navbar = () => {
                         <NavLink class="text-xl text-white pr-2 font-semibold" to='meteo'>Api Center</NavLink>
                         
                         <ul class="navbar-nav flex flex-row pl-0 list-style-none mr-auto">
-                            <li class="nav-item p-2">
+                            <li class="nav-item p-2" style={{marginLeft: 20, marginRight: 10}}>
                                 <NavLink class="nav-link text-white" to='meteo'>Api Meteo</NavLink>
                             </li>
-                            <li class="nav-item p-2">
+                            <li class="nav-item p-2" style={{marginLeft: 10, marginRight: 10}}>
                                 <NavLink
                                     class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
                                     to='films'
                                 >Api Films</NavLink>
                             </li>
-                            <li class="nav-item p-2">
+                            <li class="nav-item p-2" style={{marginLeft: 10, marginRight: 10}}>
                                 <NavLink
                                     class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
                                     to='avions'
